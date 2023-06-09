@@ -20,8 +20,7 @@
 기존에 편리하고 높은 정확성을 가진 chatgpt의 인공지능은 그대로 활용하되 더욱 사용성을 높인 ui/ux를 통해 지속적인 학습과 흥미를 유도한다. 
 # 2.	프로젝트 결과물의 개요 
 ## 2.1	프로젝트 구조
- 
-
+ ![image](https://github.com/Project-AIng/AIng/assets/93130655/24bc9492-d5b4-47f2-a774-e949cee31296)
 
 ### 가.	DBMS
 Spring JPA와 SQLAlchemy를 사용하여 MySQL 데이터베이스와 서버를 연결했다. user 테이블은 각 사용자의 정보를 담은 테이블로 email, name, 암호화된 password, 점수들 그리고 count로 필드가 구성되어 있다. total_score 테이블은 전체 사용자 통계를 위한 테이블로 모든 사용자들의 점수가 누적된 점수들과 count 필드로 구성되어 있다. conut는 평균을 내기 위해 존재하는 필드로 채팅이 이루어질때마다 하나씩 증가하여 사용자의 채팅횟수를 나타내는 역할을 한다.
@@ -32,48 +31,45 @@ Gpt-3.5 api를 호출하여, 채팅 메시지, 문법 교정 데이터를 호출
 ### 라.	Frontend
 채팅 자체가 조금 느리기 때문에 빠른 리렌더링을 위해 react를 채택하였다. 또한 스테이트 관리를 통한 각종 동작을 관리하기 용이하기 때문에 react를 채택하였다.
 
+## 2.2	프로젝트 결과물
+### 가.	메인 화면
 
 
 
 
 
-
-# 2.2	프로젝트 결과물
-가.	메인 화면
-
-
-
-
-
-
+![image](https://github.com/Project-AIng/AIng/assets/93130655/0c7f2a4e-201f-4351-aa08-abfe45aef94b)
 
 
 
 
 메인화면에서는 소개와 회원가입, 로그인을 할 수 있고 study  go 를 누르게 되면 채팅을 통한 학습을 진행 할 수 있다.
 
-나.	주제 선택
- 
+### 나.	주제 선택
+ ![image](https://github.com/Project-AIng/AIng/assets/93130655/256c6f4d-2b84-40a7-bf4d-ee51af133129)
 Study go를 누르면 주제 선택화면으로 넘어가고 주제선택 화면에서는 주제를 선택하면 해당 주제가 ai에게 전달되어 해당 주제로 대화할 수 있다.
-다.	채팅 화면
+### 다.	채팅 화면
  
- 
+ ![image](https://github.com/Project-AIng/AIng/assets/93130655/9869edc6-c713-4a0e-b1e0-8212c62a34d9)
+ ![image](https://github.com/Project-AIng/AIng/assets/93130655/c43be179-cf75-48af-9d7f-7f7fb85b2e6e)
 채팅의 경우 두 가지 버전이 존재한다. 하나는 말을 통해 채팅할 수 있는 버전과 하나는 마이크 사용이 힘든 환경에 있는 사용자를 위한 텍스트를 통해 채팅 할 수 있는 버전이다.
 말을 통해 채팅할 수 있는 버전인 speak go의 경우 stt기술을 사용하여 사용자의 음성을 실시간으로 텍스트로 전환하여 인공지능에게 전달하고 대답을 받는다. 또한 해당 채팅에서 청각장애인 또한 이용할 수 있도록 실시간 웹캠 스트리밍도 지원한다. 이를 통해 청각장애인들은 자신의 입모양을 보고 입력되는 채팅을 점검하며 회화를 연습할 수 있다.
 또한 채팅을 누르게 되면 해당 채팅에 대한 문법 교정과 자연스러운 표현으로 치환된 결과가 반환된다. 우측 하단 score board에는 실시간으로 각종 부문에 대한 점수를 실시간으로 인공지능이 채점하여 실력을 점검해 볼 수 있다.
-라.	분석 화면
- 
+### 라.	분석 화면
+ ![image](https://github.com/Project-AIng/AIng/assets/93130655/c25c932a-02fd-42e2-b025-51f50869c475)
 분석화면에는 사용자의 채팅을 바탕으로 분석을 진행한다. 먼저 가장 많이 쓴 단어를 체크해 볼 수 있도록 워드클라우드를 뜨워준다. 하단에는 사용자의 채팅을 머신러닝을 통해 분석하여 가장 사용자가 선호할 것 같은 주제를 3개 추천해주고 해당 주제를 누르면 바로 해당 주제로 대화를 이어 나갈 수 있다. 주제 추천은 각 분야별로 신경망 모델을 통해 학습을 시켰으며 해당 주제에 해당하는 단어들을 토큰화 시킨 데이터를 통해 학습한 결과를 보여준다.
-마.	마이페이지
+### 마.	마이페이지
  
-
+![image](https://github.com/Project-AIng/AIng/assets/93130655/268ccd21-59bd-4864-a62f-a7bb33634b4b)
 마이페이지에서는 해당 사용자의 정보 뿐만 아니라 성적에 관련한 정보를 보여준다. 해당 사용자의 점수와 전체 사용자의 점수를 비교하여 보여주어 사용자는 자신의 실력을 점검해 볼 수 있다. DBMS에서 암호화된 전체 사용자의 성적 정보와 현재 로그인한 사용자의 정보를 가져와 분석후에 렌더링한다. 
 
-3.	프로젝트 추진 체계 및 일정
-3.1	각 조원의 조직도 및 역할 분담
+# 3. 각 조원의 조직도 및 역할 분담
  
-이름	세부 역할 설명
-한찬희	팀장,API/analyze 개발, Frontend 보조
-김민영	API/analyze 개발, 분석 알고리즘 개발
-김연서	Frontend 총괄, ui/ux디자인
-이명성	Backend 총괄, API/analyze 개발 
+![image](https://github.com/Project-AIng/AIng/assets/93130655/e2305eae-f28c-4c75-bfd4-dabc9d6c9f3c)
+
+# 4. 각 서버별 github link
+frontend:https://github.com/Project-AIng/AIng-frontend
+
+backend:https://github.com/Project-AIng/AIng-spring-server
+
+analyze/API:https://github.com/Project-AIng/AIng-flask-server
