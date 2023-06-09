@@ -1,0 +1,35 @@
+.TopicContainer {
+    width: 200px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 7px 5px 23px -9px rgba(0, 0, 0, 0.75);
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 7px 5px 23px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 5px 23px -9px rgba(0, 0, 0, 0.75);
+    cursor: default;
+}
+.TopicContainer p {
+    color: #000000;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.TopicContainer div {
+    text-align: center;
+    color: #000000;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.TopicContainer:hover {
+    transform: translateY(-5px);
+}
+
+div .emoticon {
+    font-size: 80px;
+    width: 100px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+}

@@ -1,0 +1,19 @@
+.DeepContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.DeepTitle{
+    font-size: 1.6rem;
+    color: rgb(51, 51, 51);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.DeepLine{
+    width: 1200px;
+    height: 2px;
+    background: #555454;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,267 @@
+.parent-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chatwrap {
+  width: 50%;
+  background-color: #ddd;
+  height: 500px;
+  border: 1px solid #ddd;
+}
+
+.chatwrap {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: flex-end;
+}
+
+.chat {
+  position: relative;
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.chat div {
+  margin: 10px;
+  padding: 10px;
+  max-width: 60%;
+  border-radius: 10px;
+  color: white;
+  background-color: #0077cc;
+  align-self: flex-end;
+}
+
+.chat .bot {
+  align-self: flex-start;
+  background-color: #e6e6e6;
+  color: black;
+}
+
+.inputwrap {
+  display: flex;
+  background-color: #ddd;
+}
+
+.input_chat {
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  background-color: #ffff;
+}
+
+.input_chat input {
+  width: 90%;
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.input_chat button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #0077cc;
+  color: white;
+}
+
+.input_chat form {
+  width: 100%;
+}
+
+.info {
+  width: 50%;
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.other-results {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  
+  
+}
+
+.info-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.info-container button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: hsla(215, 53%, 65%, 0.936);
+  color: white;
+  margin-top: 10px;
+  font-size: 0.8rem; 
+
+}
+.ScoreBoard{
+  padding-top: 10%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+}
+.score-circle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.score-bar {
+  width: 100%;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+}
+
+.score-bar-fill {
+  border-radius: 5px;
+  background-color: #0077cc;
+}
+
+.result-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.resultLabel {
+  color: rgb(0, 0, 0);
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.message{
+  position: relative;
+}
+.message .Check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  color: #ffffff;
+  background-color:hsla(215, 53%, 65%, 0.936);
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem; 
+  animation: bounce 0.5s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(50%, -50%);
+  }
+  50% {
+    transform: translate(50%, -60%);
+  }
+}
+
+.recommendation{
+  text-transform: uppercase;
+  color: black;
+}
+
+.recommendationInner {
+  text-decoration: underline;
+  color: black;
+  text-decoration-color: rgb(255, 60, 6);
+  font-weight: bold;
+  opacity: 0; /* 초기 투명도 0*/
+  animation: fade-in 1s ease-in-out forwards; /* 애니메이션 적용 */
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; } 
+  100% { opacity: 1; } 
+}
+
+.ScoreBoardBtn {
+  border: 2px solid #136dd4;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display: inline-block;
+  color: white;
+  background-color: #136dd4;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.ScoreBoardBtn:active {
+  background-color: #0c4e99;
+}
+
+
+
+.webcam-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.webcam {
+  width: 240px;
+  height: 240px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.webcamText {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(79, 77, 77, 0.838);
+  animation: blink 4s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+

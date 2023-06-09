@@ -1,0 +1,63 @@
+.line{ 
+    width: 1px;
+    height: 10px;
+    margin: 0 5px;
+    display: inline-block;
+    background: #dadada;
+}
+
+.LogSign-container{
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.68);
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    
+}
+
+.LogIn-text{
+    color: rgba(0, 0, 0, 0.68);
+
+}
+
+.LogSign-text{ 
+    transition: all 0.4s linear;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.LogSign-text:hover {
+    color: #136dd4;
+}
+.LogSign-text:active {
+    color: #136dd4;
+}
+
+.AIng-text{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #136dd4;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 5%;
+}
+
+
+.StudyGo{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 2px;
+    font-size: 1.5rem;
+    color:#136dd4;
+    font-weight: bold;
+
+}
+.AIngIntro{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.68);
+    font-weight: bold;
+}

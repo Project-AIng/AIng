@@ -1,0 +1,106 @@
+.footer {
+width: 100%;
+display: flex;
+justify-content: center;
+flex-flow: column;
+}
+
+.footer .fcontainer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid color-lightgray;
+    padding: 40px 0;
+    gap: 100px;
+}
+
+.footer .fcontainer .left h3 {
+    font-size: 16px;
+    line-height: 28px;
+    color: #136dd4;
+}
+
+.footer .fcontainer .left h2 {
+    padding-bottom: 10px;
+    font-size: 27px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #136dd4;
+}
+
+.footer .fcontainer .left h2 span {
+    font-size: 14px;
+    margin-left: 8px;
+
+} 
+
+.footer .fcontainer .left .btnContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.footer .fcontainer .left .btnContent span {
+    width: 110px;
+    height: 40px;
+    border: 1px solid #0c0c0c;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+}
+
+.footer .fcontainer .left .btnContent p {
+    font-size: 12px;
+    color: #a1a1a1;
+    line-height: 16px;
+
+}
+
+.footer .fcontainer .right .navbar {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 25px;
+    line-height: 28px;
+
+}
+.footer .fcontainer .right .navbar li {
+        font-size: 14px;
+        cursor: pointer;
+        color: #a1a1a1;
+
+}
+        
+.footer .fcontainer .right .notice {
+        font-size: 12px;
+        color: #a1a1a1;
+        line-height: 18px;
+}
+
+.footer .fcontainer .right .notice span {
+        width: 1px;
+        height: 10px;
+        margin: 0 5px;
+        display: inline-block;
+        background: #dadada;
+}
+        
+.footer .fcontainer .right .sns {
+    display: flex;
+    margin-top: 35px;
+    gap: 10px;
+}
+
+.footer .fcontainer .right .sns li {
+    cursor: pointer;
+    color: #136dd4;
+}
+
+.footer .copy {
+    width: 100%;
+    text-align: center;
+    padding: 22px 0 30px;
+    font-size: 12px;
+    color: rgb(32, 32, 32)
+}
