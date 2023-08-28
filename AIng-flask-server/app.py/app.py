@@ -34,7 +34,7 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 # 환경 변수 설정 (다운로드한 JSON 키 파일의 경로를 지정)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\82108\\Desktop\\civil-orb-383914-4db936f7a15d.json"
 
-openai.api_key = "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"
+openai.api_key = ""
 
 # 주의 주의 root -> mysql id / csedbadmin -> mysql password
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1234@localhost/test'
